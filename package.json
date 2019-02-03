@@ -10,15 +10,22 @@
     "aws-amplify": "^1.1.19",
     "aws-amplify-react-native": "^2.1.7",
     "expo": "^32.0.0",
+    "moment": "^2.24.0",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-navigation": "^3.1.2",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
+    "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
   },
   "private": true
 }
