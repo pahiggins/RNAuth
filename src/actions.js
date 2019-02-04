@@ -43,11 +43,11 @@ export function createUser(username, password, email, phone_number) {
   return (dispatch) => {
     dispatch(signUp())
     let phone
-    const firstTwoDigits = phone_number.substring(0, 2)
-    if (firstTwoDigits === '+1') {
+    const firstThreeDigits = phone_number.substring(0, 3)
+    if (firstThreeDigits === '+44') {
       phone = phone_number
     } else {
-      phone = '+1' + phone_number
+      phone = '+44' + phone_number
     }
     Auth.signUp({
       username,
